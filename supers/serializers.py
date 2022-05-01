@@ -4,4 +4,5 @@ from .models import Supers
 class SupersSerializer(serializers.ModelSerializer):
     class Meta:
         model = Supers
-        field = ('name', 'alter_ego', 'primary ability', 'secondary ability', 'catchphrase', 'super type')
+        fields = ('name', 'alter_ego', 'primary_ability', 'secondary_ability', 'catchphrase', 'super_type')
+        depth = 1
